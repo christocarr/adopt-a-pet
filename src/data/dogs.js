@@ -1,11 +1,11 @@
 export default [
   {
-    name: 'Tibby',
-    breed: '',
+    name: 'Buddy',
+    breed: 'Labradour',
     gender: '',
-    age: 2,
-    color: 'Black',
-    weight: 34,
+    age: 3,
+    color: 'Golden',
+    weight: 38,
     location: '',
     notes: ''
   }
