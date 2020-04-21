@@ -8,6 +8,16 @@
 <script>
 
 export default {
-  name: 'Home'
+  name: 'Home',
+  data () {
+    return {
+      showPetForm: false
+    }
+  },
+  methods: {
+    togglePetForm () {
+      this.showPetForm = !this.showPetForm
+    }
+  }
 }
 </script>
