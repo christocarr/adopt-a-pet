@@ -1,6 +1,8 @@
 <template>
   <div>
-    {{ animal.name }}
+    <h1>{{ animal.name }}</h1>
+    <p>Age: {{ animal.age }} years old</p>
+    <p>Breed: {{ animal.breed }}</p>
   </div>
 </template>
 
