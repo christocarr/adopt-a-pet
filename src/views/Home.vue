@@ -1,7 +1,39 @@
 <template>
   <div class="home">
     <h1>Adopt a pet that needs a good home.</h1>
-    <b-btn>Add Pet</b-btn>
+    <b-btn @click="togglePetForm">Add Pet</b-btn>
+    <b-form @submit="handleSubmit" v-if="showPetForm">
+      <b-form-group id="petName" label="Pet name:" label-for="petName">
+        <b-form-input
+          id="petNameInput"
+          v-model="form.name"
+          required
+          placeholder="Enter name"
+        ></b-form-input>
+      </b-form-group>
+
+      <b-form-group id="speciesSelect" label="Species:" label-for="speciesSelect">
+        <b-form-select
+          id="speciesSelect"
+          v-model="form.species"
+          :options="['dogs', 'cats']"
+          required
+        ></b-form-select>
+      </b-form-group>
+
+      <b-form-group id="petAge" label="Pet age:" label-for="petAgeInput">
+        <b-form-input
+          id="petAgeInput"
+          type="number"
+          v-model="form.age"
+          required
+          placeholder="Enter age"
+        ></b-form-input>
+      </b-form-group>
+
+      <b-button type="submit" variant="primary">Submit</b-button>
+      <b-button type="reset" variant="danger">Reset</b-button>
+    </b-form>
   </div>
 </template>
 
@@ -11,7 +43,12 @@ export default {
   name: 'Home',
   data () {
     return {
-      showPetForm: false
+      showPetForm: false,
+      form: {
+        name: '',
+        age: 0,
+        species: null
+      }
     }
   },
   methods: {
