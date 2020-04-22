@@ -8,7 +8,7 @@ export default [
     weight: 34,
     location: 'Wembley',
     notes: '',
-    species: 'cat'
+    species: 'cats'
   },
   {
     name: 'Kat',
@@ -19,7 +19,7 @@ export default [
     weight: 14,
     location: 'Harrow',
     notes: '',
-    species: 'cat'
+    species: 'cats'
   },
   {
     name: 'Mouse',
@@ -30,7 +30,7 @@ export default [
     weight: 10,
     location: 'Kenton Town',
     notes: '',
-    species: 'cat'
+    species: 'cats'
   },
   {
     name: 'Marley',
@@ -41,6 +41,6 @@ export default [
     weight: 14,
     location: 'Harrow',
     notes: '',
-    species: 'cat'
+    species: 'cats'
   }
 ]

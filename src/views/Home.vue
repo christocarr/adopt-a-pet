@@ -113,7 +113,8 @@ export default {
           breed,
           gender,
           age,
-          color
+          color,
+          species
         }
       }
       this.addPet(payload)

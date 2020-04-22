@@ -8,7 +8,7 @@ export default [
     weight: 38,
     location: 'Brent',
     notes: '',
-    species: 'dog'
+    species: 'dogs'
   },
   {
     name: 'Choco',
@@ -19,7 +19,7 @@ export default [
     weight: 28,
     location: 'Brent',
     notes: '',
-    species: 'dog'
+    species: 'dogs'
   },
   {
     name: 'Benji',
@@ -30,7 +30,7 @@ export default [
     weight: 19,
     location: 'Brent',
     notes: '',
-    species: 'dog'
+    species: 'dogs'
   },
   {
     name: 'Shasa',
@@ -41,6 +41,6 @@ export default [
     weight: 21,
     location: 'Harrow',
     notes: '',
-    species: 'dog'
+    species: 'dogs'
   }
 ]

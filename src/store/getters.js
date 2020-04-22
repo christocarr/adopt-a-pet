@@ -4,7 +4,7 @@ export default {
   },
   catArray: (state) => {
     return state.pets.filter(pet => {
-      return pet.species === 'cat'
+      return pet.species === 'cats'
     })
   }
 }
