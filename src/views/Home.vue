@@ -57,6 +57,14 @@
         ></b-form-input>
       </b-form-group>
 
+      <b-form-group id="petColor" label="Pet color:" label-for="petColorInput">
+        <b-form-input
+          id="petColorInput"
+          v-model="form.color"
+          placeholder="Enter color"
+        ></b-form-input>
+      </b-form-group>
+
       <b-button type="submit" variant="primary">Submit</b-button>
       <b-button type="reset" variant="danger">Reset</b-button>
     </b-form>
@@ -76,6 +84,7 @@ export default {
         breed: '',
         gender: null,
         age: 0,
+        color: '',
         species: null
       }
     }
@@ -88,14 +97,15 @@ export default {
       this.showPetForm = !this.showPetForm
     },
     handleSubmit () {
-      const { species, breed, gender, age, name } = this.form
+      const { species, breed, gender, age, color, name } = this.form
       const payload = {
         species,
         pet: {
           name,
           breed,
           gender,
-          age
+          age,
+          color
         }
       }
       this.addPet(payload)
@@ -104,6 +114,7 @@ export default {
         breed: '',
         gender: null,
         age: 0,
+        color: '',
         species: null
       }
     }
