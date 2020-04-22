@@ -7,7 +7,8 @@ export default [
     color: 'Black',
     weight: 34,
     location: 'Wembley',
-    notes: ''
+    notes: '',
+    species: 'cat'
   },
   {
     name: 'Kat',
@@ -17,7 +18,8 @@ export default [
     color: 'ginger',
     weight: 14,
     location: 'Harrow',
-    notes: ''
+    notes: '',
+    species: 'cat'
   },
   {
     name: 'Mouse',
@@ -27,7 +29,8 @@ export default [
     color: 'grey',
     weight: 10,
     location: 'Kenton Town',
-    notes: ''
+    notes: '',
+    species: 'cat'
   },
   {
     name: 'Marley',
@@ -37,6 +40,7 @@ export default [
     color: 'black',
     weight: 14,
     location: 'Harrow',
-    notes: ''
+    notes: '',
+    species: 'cat'
   }
 ]

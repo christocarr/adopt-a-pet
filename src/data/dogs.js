@@ -7,7 +7,8 @@ export default [
     color: 'Golden',
     weight: 38,
     location: 'Brent',
-    notes: ''
+    notes: '',
+    species: 'dog'
   },
   {
     name: 'Choco',
@@ -17,7 +18,8 @@ export default [
     color: 'Black and light brown',
     weight: 28,
     location: 'Brent',
-    notes: ''
+    notes: '',
+    species: 'dog'
   },
   {
     name: 'Benji',
@@ -27,7 +29,8 @@ export default [
     color: 'White',
     weight: 19,
     location: 'Brent',
-    notes: ''
+    notes: '',
+    species: 'dog'
   },
   {
     name: 'Shasa',
@@ -37,6 +40,7 @@ export default [
     color: 'Black mostly',
     weight: 21,
     location: 'Harrow',
-    notes: ''
+    notes: '',
+    species: 'dog'
   }
 ]
