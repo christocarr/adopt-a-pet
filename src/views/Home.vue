@@ -69,6 +69,11 @@ export default {
         }
       }
       this.addPet(payload)
+      this.form = {
+        name: '',
+        age: 0,
+        species: null
+      }
     }
   }
 }
