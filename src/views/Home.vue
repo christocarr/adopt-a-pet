@@ -56,6 +56,7 @@ export default {
       showPetForm: false,
       form: {
         name: '',
+        breed: '',
         age: 0,
         species: null
       }
@@ -69,17 +70,19 @@ export default {
       this.showPetForm = !this.showPetForm
     },
     handleSubmit () {
-      const { species, age, name } = this.form
+      const { species, breed, age, name } = this.form
       const payload = {
         species,
         pet: {
           name,
+          breed,
           age
         }
       }
       this.addPet(payload)
       this.form = {
         name: '',
+        breed: '',
         age: 0,
         species: null
       }
