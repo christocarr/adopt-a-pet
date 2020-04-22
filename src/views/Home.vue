@@ -12,6 +12,15 @@
         ></b-form-input>
       </b-form-group>
 
+      <b-form-group id="petBreed" label="Breed:" label-for="petBreedInput">
+        <b-form-input
+          id="petBreedInput"
+          v-model="form.breed"
+          required
+          placeholder="Enter breed"
+        ></b-form-input>
+      </b-form-group>
+
       <b-form-group id="speciesSelect" label="Species:" label-for="speciesSelect">
         <b-form-select
           id="speciesSelect"
