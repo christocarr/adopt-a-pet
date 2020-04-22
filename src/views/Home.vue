@@ -21,6 +21,23 @@
         ></b-form-input>
       </b-form-group>
 
+      <b-form-group id="petGender">
+        <b-form-radio
+          id="maleCheckbox"
+          v-model="form.gender"
+          name="male"
+          value="male"
+        >male
+        </b-form-radio>
+        <b-form-radio
+          id="femaleCheckbox"
+          v-model="form.gender"
+          name="female"
+          value="female"
+        >female
+        </b-form-radio>
+      </b-form-group>
+
       <b-form-group id="speciesSelect" label="Species:" label-for="speciesSelect">
         <b-form-select
           id="speciesSelect"
@@ -57,6 +74,7 @@ export default {
       form: {
         name: '',
         breed: '',
+        gender: null,
         age: 0,
         species: null
       }
@@ -70,12 +88,13 @@ export default {
       this.showPetForm = !this.showPetForm
     },
     handleSubmit () {
-      const { species, breed, age, name } = this.form
+      const { species, breed, gender, age, name } = this.form
       const payload = {
         species,
         pet: {
           name,
           breed,
+          gender,
           age
         }
       }
@@ -83,6 +102,7 @@ export default {
       this.form = {
         name: '',
         breed: '',
+        gender: null,
         age: 0,
         species: null
       }
