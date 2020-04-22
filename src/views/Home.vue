@@ -2,6 +2,7 @@
   <div class="home">
     <h1>Adopt a pet that needs a good home.</h1>
     <p>Total animals: {{ animalCount }}</p>
+    <p>Total cats: {{ catArray.length }}</p>
     <b-btn @click="togglePetForm">Add Pet</b-btn>
     <b-form @submit.prevent="handleSubmit" v-if="showPetForm">
       <b-form-group id="petName" label="Pet name:" label-for="petName">
@@ -92,7 +93,8 @@ export default {
   },
   computed: {
     ...mapGetters([
-      'animalCount'
+      'animalCount',
+      'catArray'
     ])
   },
   methods: {
