@@ -2,7 +2,7 @@
   <div class="home">
     <h1>Adopt a pet that needs a good home.</h1>
     <b-btn @click="togglePetForm">Add Pet</b-btn>
-    <b-form @submit="handleSubmit" v-if="showPetForm">
+    <b-form @submit.prevent="handleSubmit" v-if="showPetForm">
       <b-form-group id="petName" label="Pet name:" label-for="petName">
         <b-form-input
           id="petNameInput"
@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 
 export default {
   name: 'Home',
@@ -52,8 +53,22 @@ export default {
     }
   },
   methods: {
+    ...mapActions([
+      'addPet'
+    ]),
     togglePetForm () {
       this.showPetForm = !this.showPetForm
+    },
+    handleSubmit () {
+      const { species, age, name } = this.form
+      const payload = {
+        species,
+        pet: {
+          name,
+          age
+        }
+      }
+      this.addPet(payload)
     }
   }
 }
